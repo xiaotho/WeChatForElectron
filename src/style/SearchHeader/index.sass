@@ -1,0 +1,63 @@
+@import '../sass.sass'
+
+#Search-module
+  position: relative
+  width: -webkit-fill-available
+  display: flex
+  flex-direction: column
+  height: -webkit-fill-available
+
+  #SearchHeader
+    background: $main-background-color-1
+    display: flex
+    box-sizing: border-box
+    padding: 20px 15px
+    width: -webkit-fill-available
+
+    .search-box
+      position: relative
+      width: 100%
+      padding-right: 15px
+
+      .input-box
+        width: -webkit-fill-available
+        border-radius: 3px
+
+      input
+        width: -webkit-fill-available
+        box-sizing: border-box
+        padding: 2px 20px
+        height: 100%
+        display: block
+        background-color: rgb(230, 230, 230)
+        border: 1px solid rgb(232, 232, 232)
+        border-radius: 4px
+
+      > svg
+        position: absolute
+
+        &.search-icon
+          top: 5px
+          left: 5px
+
+    .add-icon
+      border: 1px solid rgb(229, 229, 229)
+      width: 30px
+      height: 22px
+      display: flex
+      align-items: center
+      justify-items: center
+      box-sizing: border-box
+      border-radius: 3px
+
+      svg
+        margin: auto
+
+  .search-rulet-list
+    z-index: 9
+    top: inherit
+    left: 0
+    width: -webkit-fill-available
+    background: rgba(255, 255, 255, .95)
+    flex-grow: 1
+    flex-shrink: 1

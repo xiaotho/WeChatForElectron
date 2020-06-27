@@ -5,7 +5,7 @@ import { hot } from 'react-hot-loader';
 import Store from '../redux';
 import DevTools from '../redux/DevTools';
 import WeChatView from '../containers/WeChatView'
-import IndexPage from '../containers/index'
+import IndexPage from '../containers/IndexPage'
 
 const Router = ({ component: Component, children, ...rest }) => (
   <Route

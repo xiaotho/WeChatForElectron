@@ -1,5 +1,28 @@
+@import '../sass.sass'
+
 #w-chat-view
-  .box 
-    width: 20px
-    font-size: 23px
-    font-weight: bold
+  flex-grow: 1
+  flex-shrink: 1
+  display: flex
+
+  .function-bar
+    width: 300px
+    position: relative
+    
+    .drag 
+      position: absolute
+      z-index: 10
+      right: -2px
+      padding: 0 2px
+      height: -webkit-fill-available
+      cursor: move
+
+      &::before
+        content: ''
+        display: block
+        width: 1px
+        height: 100%
+        background: $main-border-line-color
+
+  .module-content 
+    height: 100%
