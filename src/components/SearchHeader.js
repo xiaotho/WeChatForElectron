@@ -23,7 +23,7 @@ export default class SearchHeader extends Component {
           </div>
         </div>
         <div className='search-rulet-list'>
-          2
+          232311
           <SearchList />
         </div>
       </div>
